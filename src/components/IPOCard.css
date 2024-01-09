@@ -1,0 +1,80 @@
+/* IPOCard.css */
+.ipo-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s;
+  background-color: #fff; /* Optional: Set a background color */
+  border-radius: 8px; /* Optional: Add border radius for rounded corners */
+  font-family: "Your Custom Font", sans-serif; /* Specify your custom font */
+
+  /* Optional: Add subtle shade effect with a maroon color */
+  box-shadow: 0 4px 8px rgba(128, 0, 0, 0.1);
+}
+
+.ipo-card:hover {
+  box-shadow: 0 12px 24px rgba(128, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.ipo-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px; /* Optional: Adjust font size */
+}
+
+.cta {
+  --shadowColor: 187 60% 40%;
+  display: flex;
+  flex-wrap: wrap;
+  background: hsl(187 70% 85%);
+  max-width: 50rem;
+  width: 45%;
+  box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  border: 0.5rem solid;
+}
+
+.cta img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  flex: 1 1 300px;
+  outline: 0.5rem solid;
+}
+
+.cta__text-column {
+  padding: min(2rem, 5vw) min(2rem, 5vw) min(2.5rem, 5vw);
+  flex: 1 0 50%;
+}
+
+.cta__text-column > * + * {
+  margin: min(1.5rem, 2.5vw) 0 0 0;
+}
+
+.cta a {
+  display: inline-block;
+  color: black;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  background: hsl(187 75% 64%);
+  border-radius: 0.6rem;
+  font-weight: 700;
+  border: 0.35rem solid;
+}
+
+#ipo-tetx {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #ff551c;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px #e5d2d3;
+}
+
+/* Add more styles as needed */
